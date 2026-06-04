@@ -2,7 +2,7 @@ export default function middleware(req) {
   const authHeader = req.headers.get("Authorization") || "";
   const [user, pass] = atob(authHeader.replace("Basic ", "")).split(":");
 
-  if (user === "portfolio-shin" && pass === "X9k!2mQa#p") {
+  if (user === "portfolio-shin" && pass === "IsMyPortfolio") {
     return; // 認証OK → そのまま表示
   }
 
